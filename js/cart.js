@@ -2,7 +2,7 @@
    SAUKOS CHIKEN - SISTEMA DE CARRITO Y PEDIDOS DIRECTO A WHATSAPP
    ========================================================================== */
 
-const SAUKOS_PHONE = "51987654321"; // Reemplazar con el número oficial de Saukos Chiken
+const SAUKOS_PHONE = "51941188724"; 
 
 // Catálogo maestro de productos
 const MENU_PRODUCTS = [
