@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabaja con Nosotros | Saukos Chiken Oportunidades Laborales</title>
+  <meta name="description" content="Únete a la familia de Saukos Chiken. Vacantes para maestros horneros, cocineros, mozos y repartidores de delivery. Crecimiento y beneficios de ley.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .job-card {
+      background: var(--dark-card);
+      border: 1px solid var(--dark-border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .job-card:hover {
+      border-color: var(--primary-gold);
+      transform: translateY(-4px);
+    }
+    .job-tag {
+      font-size: 0.75rem;
+      background: rgba(245, 158, 11, 0.12);
+      color: var(--primary-gold);
+      padding: 0.25rem 0.65rem;
+      border-radius: 99px;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 0.75rem;
+    }
+    .benefit-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--dark-card);
+      border: 1px solid var(--dark-border-subtle);
+      padding: 1.25rem;
+      border-radius: var(--radius-md);
+    }
+    .benefit-icon {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      border-radius: 50%;
+      background: rgba(216, 30, 5, 0.15);
+      color: var(--primary-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-info">
+        <span><i class="fa-solid fa-people-carry-box text-gold"></i> Portal de Talento Humano - Saukos Chiken</span>
+      </div>
+      <div class="top-bar-socials">
+        <a href="index.html" style="width: auto; padding: 0 10px; border-radius: 12px; font-size: 0.78rem;">
+          <i class="fa-solid fa-arrow-left"></i> Volver a la Carta
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+        <div class="brand-text">
+          <div class="brand-name">SAUKOS <span>CHIKEN</span></div>
+          <span class="brand-tagline">Únete a Nuestro Equipo</span>
+        </div>
+      </a>
+      <div class="navbar-actions">
+        <a href="#vacantes" class="btn btn-outline btn-sm">Ver Puestos</a>
+        <a href="#postular" class="btn btn-gold btn-sm">Postular Ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO TRABAJA -->
+  <section class="section-padding text-center" style="background: radial-gradient(circle at center, rgba(216, 30, 5, 0.15) 0%, #0C0D10 70%);">
+    <div class="container" style="max-width: 800px;">
+      <div class="section-tag"><i class="fa-solid fa-users"></i> Carrera & Oportunidad</div>
+      <h1 class="section-title">¡Crece y Brilla con la <span>Familia Saukos</span>!</h1>
+      <p class="section-subtitle">
+        Buscamos personas entusiastas, responsables y con pasión por el servicio al cliente y el arte culinario. Ofrecemos estabilidad laboral, excelente clima y oportunidad de desarrollo profesional.
+      </p>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section-padding" style="background: var(--dark-surface); padding-top: 2rem;">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 2.5rem;">
+        <h2 class="section-title" style="font-size: 2rem;">¿Por qué Trabajar en <span>Saukos Chiken</span>?</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-file-signature"></i></div>
+          <div>
+            <h4 style="font-size: 1rem; color: #fff;">Ingreso a Planilla</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Gratificaciones, CTS, EsSalud y asignación familiar de ley.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon" style="color: var(--primary-gold); background: rgba(245, 158, 11, 0.15);"><i class="fa-solid fa-utensils"></i></div>
+          <div>
+            <h4 style="font-size: 1rem; color: #fff;">Alimentación Cubierta</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Almuerzo y cena nutritiva 100% cubierta en tu turno.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon" style="color: var(--accent-green); background: rgba(16, 185, 129, 0.15);"><i class="fa-solid fa-stairs"></i></div>
+          <div>
+            <h4 style="font-size: 1rem; color: #fff;">Línea de Carrera</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Capacitaciones continuas con opción a ascender a jefaturas.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon" style="color: var(--primary-orange); background: rgba(234, 88, 12, 0.15);"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <div>
+            <h4 style="font-size: 1rem; color: #fff;">Propinas & Bonos</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Reparto equitativo de propinas semanales y bonos por puntualidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VACANTES DISPONIBLES -->
+  <section class="section-padding" id="vacantes">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag"><i class="fa-solid fa-briefcase"></i> Convocatorias Abiertas</div>
+        <h2 class="section-title">Puestos de <span>Trabajo Disponibles</span></h2>
+        <p class="section-subtitle">Revisa nuestras vacantes vigentes y postula en solo 2 minutos.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 3.5rem;">
+        
+        <!-- Puesto 1 -->
+        <div class="job-card">
+          <div>
+            <span class="job-tag">Cocina / Hornos</span>
+            <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 0.5rem;">Maestro Hornero a la Brasa</h3>
+            <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1rem;">
+              Encargado de la cocción, control de carbón y leña, sazonado uniforme y desposte de pollos y cortes a la brasa.
+            </p>
+            <ul style="font-size: 0.82rem; color: var(--text-dim); margin-bottom: 1.5rem; line-height: 1.8;">
+              <li><i class="fa-solid fa-circle-check text-gold"></i> Exp. mínima de 1 año en pollerías</li>
+              <li><i class="fa-solid fa-circle-check text-gold"></i> Turno completo (rotativo)</li>
+              <li><i class="fa-solid fa-circle-check text-gold"></i> Sueldo acorde al mercado + Bonos</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline btn-sm select-job" data-role="Maestro Hornero a la Brasa" style="width: 100%;">
+            Postular a este Puesto
+          </button>
+        </div>
+
+        <!-- Puesto 2 -->
+        <div class="job-card">
+          <div>
+            <span class="job-tag">Servicio y Atención</span>
+            <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 0.5rem;">Azafatas y Mozos de Salón</h3>
+            <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1rem;">
+              Atención cordial y proactiva a comensales, toma de pedidos, despacho de platos y limpieza general del salón.
+            </p>
+            <ul style="font-size: 0.82rem; color: var(--text-dim); margin-bottom: 1.5rem; line-height: 1.8;">
+              <li><i class="fa-solid fa-circle-check text-gold"></i> Con o sin experiencia (te capacitamos)</li>
+              <li><i class="fa-solid fa-circle-check text-gold"></i> Turno tarde / noche</li>
+              <li><i class="fa-solid fa-circle-check text-gold"></i> Sueldo básico + Propinas diarias</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline btn-sm select-job" data-role="Azafata / Mozo de Salón" style="width: 100%;">
+            Postular a este Puesto
+          </button>
+        </div>
+
+        <!-- Puesto 3 -->
+        <div class="job-card">
+          <div>
+            <span class="job-tag">Logística / Transporte</span>
+            <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 0.5rem;">Repartidores de Delivery (Moto Propia)</h3>
+            <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1rem;">
+              Entrega rápida y cuidadosa de pedidos a domicilio en mochilas térmicas selladas. Cobro POS y efectivo.
+            </p>
+            <ul style="font-size: 0.82rem; color: var(--text-dim); margin-bottom: 1.5rem; line-height: 1.8;">
+              <li><i class="fa-solid fa-circle-check text-gold"></i> Moto propia con SOAT vigente y brevete B2</li>
+              <li><i class="fa-solid fa-circle-check text-gold"></i> Pago por flete garantizado + combustible</li>
+              <li><i class="fa-solid fa-circle-check text-gold"></i> Flexibilidad de horarios</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline btn-sm select-job" data-role="Motorizado de Delivery" style="width: 100%;">
+            Postular a este Puesto
+          </button>
+        </div>
+
+      </div>
+
+      <!-- FORMULARIO DE POSTULACIÓN -->
+      <div class="form-box" id="postular" style="max-width: 800px; margin: 0 auto;">
+        <h3 style="font-size: 1.35rem; color: #fff; margin-bottom: 0.5rem;">
+          <i class="fa-solid fa-id-card text-gold"></i> Formulario de Postulación de Empleo
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
+          Completa tus datos y nuestro equipo de Recursos Humanos se comunicará contigo para una entrevista.
+        </p>
+
+        <form id="jobForm">
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Nombre Completo <span class="req">*</span></label>
+              <input type="text" id="jobName" class="form-control" placeholder="Tus nombres y apellidos" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Puesto de Interés <span class="req">*</span></label>
+              <select id="jobRole" class="form-control" required>
+                <option value="Maestro Hornero a la Brasa">Maestro Hornero a la Brasa</option>
+                <option value="Azafata / Mozo de Salón">Azafata / Mozo de Salón</option>
+                <option value="Motorizado de Delivery">Motorizado de Delivery (Moto Propia)</option>
+                <option value="Jefe de Cocina / Ayudante">Jefe de Cocina / Ayudante</option>
+                <option value="Cajero(a) y Atención al Cliente">Cajero(a) y Atención al Cliente</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Celular / WhatsApp <span class="req">*</span></label>
+              <input type="tel" id="jobPhone" class="form-control" placeholder="Ej: 987654321" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Correo Electrónico <span class="req">*</span></label>
+              <input type="email" id="jobEmail" class="form-control" placeholder="tu@correo.com" required>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Distrito de Residencia <span class="req">*</span></label>
+              <input type="text" id="jobDistrito" class="form-control" placeholder="Ej: San Miguel, Surco, Los Olivos..." required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Disponibilidad de Horario <span class="req">*</span></label>
+              <select id="jobHorario" class="form-control" required>
+                <option value="Tiempo Completo">Tiempo Completo (Full Time)</option>
+                <option value="Medio Tiempo">Medio Tiempo (Part Time)</option>
+                <option value="Fines de Semana">Fines de Semana (Viernes a Domingo)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Resumen de Experiencia Previa o Enlace a tu CV / LinkedIn</label>
+            <textarea id="jobExperience" rows="3" class="form-control" placeholder="Cuéntanos brevemente dónde has trabajado y por qué te gustaría ser parte de Saukos Chiken..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 1rem;">
+            <i class="fa-solid fa-paper-plane"></i> Enviar Postulación Laboral
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SIMPLE -->
+  <footer class="site-footer" style="padding: 2.5rem 0;">
+    <div class="container text-center" style="font-size: 0.85rem; color: var(--text-dim);">
+      &copy; 2026 Saukos Chiken S.A.C. - Área de Selección y Gestión del Talento. <a href="index.html" class="text-gold">Volver al Inicio</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Conectar botones de selección rápida de puesto
+    document.querySelectorAll('.select-job').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const role = btn.getAttribute('data-role');
+        const select = document.getElementById('jobRole');
+        if (select) {
+          select.value = role;
+          document.getElementById('postular').scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    document.getElementById('jobForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('jobName').value;
+      const role = document.getElementById('jobRole').value;
+      
+      const text = `¡Hola Equipo de RRHH Saukos Chiken! 👋 Mi nombre es ${name} y acabo de postular al puesto de *${role}*. Les comparto mis datos para coordinar la entrevista.`;
+      const url = `https://wa.me/51987654321?text=${encodeURIComponent(text)}`;
+      
+      alert('¡Gracias por postular! Hemos recibido tus datos y te contactaremos por WhatsApp o correo.');
+      window.open(url, '_blank');
+      document.getElementById('jobForm').reset();
+    });
+  </script>
+</body>
+</html>

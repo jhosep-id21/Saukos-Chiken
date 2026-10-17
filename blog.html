@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Gastronómico & Cultura de Brasa | Saukos Chiken</title>
+  <meta name="description" content="Artículos culinarios, historias y secretos del auténtico pollo a la brasa peruano, marinados tradicionales, ají pollero y guarniciones nativas.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .featured-article {
+      background: var(--dark-card);
+      border: 1px solid var(--dark-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 2rem;
+      margin-bottom: 3.5rem;
+      align-items: center;
+    }
+    .featured-article img {
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      object-fit: cover;
+    }
+    .featured-content {
+      padding: 2.5rem 2rem 2.5rem 0;
+    }
+    @media (max-width: 900px) {
+      .featured-article {
+        grid-template-columns: 1fr;
+      }
+      .featured-content {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-info">
+        <span><i class="fa-solid fa-feather text-gold"></i> El Rincón del Maestro Hornero - Saukos Chiken</span>
+      </div>
+      <div class="top-bar-socials">
+        <a href="index.html" style="width: auto; padding: 0 10px; border-radius: 12px; font-size: 0.78rem;">
+          <i class="fa-solid fa-arrow-left"></i> Volver a la Carta
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+        <div class="brand-text">
+          <div class="brand-name">SAUKOS <span>CHIKEN</span></div>
+          <span class="brand-tagline">Blog Gastronómico</span>
+        </div>
+      </a>
+      <div class="navbar-actions">
+        <a href="index.html#carta" class="btn btn-outline btn-sm">Ver Carta</a>
+        <a href="https://wa.me/51987654321" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+          <i class="fa-brands fa-whatsapp"></i> Pedir Ahora
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO BLOG -->
+  <section class="section-padding text-center" style="background: radial-gradient(circle at center, rgba(234, 88, 12, 0.12) 0%, #0B0C10 70%);">
+    <div class="container" style="max-width: 800px;">
+      <div class="section-tag"><i class="fa-solid fa-book-open"></i> Artículos & Secretos</div>
+      <h1 class="section-title">El Arte de las <span>Brasas Peruanas</span></h1>
+      <p class="section-subtitle">
+        Sumérgete en la historia, técnicas y pasión culinaria que hacen de nuestro pollo a la brasa el plato más amado del Perú.
+      </p>
+    </div>
+  </section>
+
+  <!-- ARTÍCULO DESTACADO -->
+  <main class="container section-padding" style="padding-top: 1rem;">
+    
+    <div class="featured-article">
+      <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=900&q=80" alt="Horno de brasa Saukos">
+      <div class="featured-content">
+        <div class="blog-meta">
+          <span><i class="fa-solid fa-star text-gold"></i> Artículo Destacado</span>
+          <span><i class="fa-regular fa-clock"></i> 5 min de lectura</span>
+        </div>
+        <h2 style="color: #fff; font-size: 1.85rem; margin-bottom: 1rem; line-height: 1.3;">
+          El Secreto del Marinado de 24 Horas con Hierbas Andinas
+        </h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.7;">
+          En Saukos Chiken creemos que la prisa es enemiga de la buena cocina. El verdadero sabor a la brasa no se logra con sazonadores artificiales, sino respetando los tiempos de maceración con huacatay de chacra, romero fresco, toques de cerveza negra y ají panca selecto.
+        </p>
+        <a href="index.html#carta" class="btn btn-gold btn-sm">
+          <i class="fa-solid fa-utensils"></i> Probar Este Pollo Ahora
+        </a>
+      </div>
+    </div>
+
+    <!-- GRILLA DE ARTÍCULOS -->
+    <div class="blog-grid">
+      
+      <!-- Post 1 -->
+      <article class="blog-card">
+        <div class="blog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80" alt="Ají pollero cremoso">
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> 05 Octubre, 2026</span>
+            <span><i class="fa-solid fa-pepper-hot text-red"></i> Salsas</span>
+          </div>
+          <h3 class="blog-title">Anatomía del Ají Pollero Perfecto: Textura, Picor y Frescura</h3>
+          <p class="blog-excerpt">
+            No hay pollo a la brasa sin su respectivo ají. Te revelamos por qué usamos ají amarillo soasado a fuego vivo para quitarle acidez y lograr esa cremosidad natural sin excesos de grasa.
+          </p>
+          <a href="index.html#carta" class="blog-link">Conocer Nuestras Cremas <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="blog-card">
+        <div class="blog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" alt="Papas fritas crocantes">
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> 28 Septiembre, 2026</span>
+            <span><i class="fa-solid fa-seedling text-green"></i> Agricultura</span>
+          </div>
+          <h3 class="blog-title">¿Por qué Elegir Papa Amarilla y Canchán en Lugar de Precongeladas?</h3>
+          <p class="blog-excerpt">
+            La textura arenosa de la papa nativa peruana es irreemplazable. Descubre nuestro proceso de doble cocción que deja la piel crujiente y el interior tierno y dulce.
+          </p>
+          <a href="index.html#carta" class="blog-link">Pedir Papas Nativas <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="blog-card">
+        <div class="blog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=600&q=80" alt="Anticuchos en parrilla">
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> 15 Septiembre, 2026</span>
+            <span><i class="fa-solid fa-fire text-orange"></i> Tradición</span>
+          </div>
+          <h3 class="blog-title">De la Alameda a la Parrilla: La Historia de los Anticuchos</h3>
+          <p class="blog-excerpt">
+            Un recorrido por la herencia afroperuana que convirtió al corazón de res macerado en vinagre y ají panca en el mejor complemento de las noches de pollería.
+          </p>
+          <a href="index.html#carta" class="blog-link">Ver Parrillas <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- Post 4 -->
+      <article class="blog-card">
+        <div class="blog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Chicha morada artesanal">
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> 02 Septiembre, 2026</span>
+            <span><i class="fa-solid fa-glass-water text-gold"></i> Bebidas</span>
+          </div>
+          <h3 class="blog-title">El Maridaje Perfecto: Chicha Morada Casera y Pollo a la Brasa</h3>
+          <p class="blog-excerpt">
+            Los polifenoles del maíz morado y la acidez del membrillo y la manzana equilibran a la perfección la intensidad del pollo a la leña. Una receta 100% natural.
+          </p>
+          <a href="index.html#carta" class="blog-link">Pedir Chicha Saukos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- Post 5 -->
+      <article class="blog-card">
+        <div class="blog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Horno ecológico a leña">
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> 20 Agosto, 2026</span>
+            <span><i class="fa-solid fa-tree text-orange"></i> Leña y Carbón</span>
+          </div>
+          <h3 class="blog-title">Algarrobo y Carbón Vegetal: El Verdadero Secreto Ahumado</h3>
+          <p class="blog-excerpt">
+            Por qué los hornos a gas nunca podrán igualar el sello aromático de las brasas vivas. Te contamos cómo mantenemos el control térmico en Saukos Chiken.
+          </p>
+          <a href="index.html#carta" class="blog-link">Conocer Más <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- Post 6 -->
+      <article class="blog-card">
+        <div class="blog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Reunión familiar con pollo">
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span><i class="fa-regular fa-calendar"></i> 10 Agosto, 2026</span>
+            <span><i class="fa-solid fa-users text-gold"></i> Celebraciones</span>
+          </div>
+          <h3 class="blog-title">El Plato que Une a Todas las Familias Peruanas</h3>
+          <p class="blog-excerpt">
+            Cumpleaños, triunfos de la selección o un domingo cualquiera: cómo el pollo a la brasa se convirtió en el patrimonio vivo del abrazo familiar.
+          </p>
+          <a href="index.html#carta" class="blog-link">Pedir Familiar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Newsletter / Suscripción a Promos -->
+    <div class="legal-card text-center" style="margin-top: 4rem; background: linear-gradient(135deg, rgba(216, 30, 5, 0.15) 0%, rgba(20, 22, 28, 0.98) 100%);">
+      <i class="fa-solid fa-envelope-open-text text-gold" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
+      <h3 style="font-size: 1.5rem; color: #fff; margin-bottom: 0.5rem;">Recibe Recetas & Cupones Exclusivos</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 500px; margin: 0 auto 1.5rem;">
+        Suscríbete para recibir noticias, secretos de la parrilla y descuentos especiales directo a tu correo o WhatsApp.
+      </p>
+      <div style="display: flex; gap: 0.5rem; max-width: 480px; margin: 0 auto; flex-wrap: wrap;">
+        <input type="email" class="form-control" placeholder="Ingresa tu correo o WhatsApp" style="flex: 1; min-width: 240px;">
+        <button class="btn btn-gold" onclick="alert('¡Gracias por suscribirte al boletín de Saukos Chiken!')">
+          Suscribirme
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER SIMPLE -->
+  <footer class="site-footer" style="padding: 2.5rem 0;">
+    <div class="container text-center" style="font-size: 0.85rem; color: var(--text-dim);">
+      &copy; 2026 Saukos Chiken S.A.C. - Revista Gastronómica y de Cultura Culinaria. <a href="index.html" class="text-gold">Volver a la Tienda</a>
+    </div>
+  </footer>
+
+</body>
+</html>
