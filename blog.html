@@ -41,6 +41,10 @@
       .featured-article {
         grid-template-columns: 1fr;
       }
+      .featured-article img {
+        min-height: auto;
+        height: 250px;
+      }
       .featured-content {
         padding: 1.5rem;
       }
@@ -74,8 +78,8 @@
         </div>
       </a>
       <div class="navbar-actions">
-        <a href="index.html#carta" class="btn btn-outline btn-sm">Ver Carta</a>
-        <a href="https://wa.me/51987654321" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+        <a href="index.html#carta" class="btn btn-outline btn-sm nav-hide-mobile">Ver Carta</a>
+        <a href="https://wa.me/51941188724" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
           <i class="fa-brands fa-whatsapp"></i> Pedir Ahora
         </a>
       </div>
@@ -236,8 +240,8 @@
         Suscríbete para recibir noticias, secretos de la parrilla y descuentos especiales directo a tu correo o WhatsApp.
       </p>
       <div style="display: flex; gap: 0.5rem; max-width: 480px; margin: 0 auto; flex-wrap: wrap;">
-        <input type="email" class="form-control" placeholder="Ingresa tu correo o WhatsApp" style="flex: 1; min-width: 240px;">
-        <button class="btn btn-gold" onclick="alert('¡Gracias por suscribirte al boletín de Saukos Chiken!')">
+        <input type="email" class="form-control" placeholder="Ingresa tu correo o WhatsApp" style="flex: 1 1 200px; min-width: 0;">
+        <button class="btn btn-gold" style="flex-grow: 1;" onclick="alert('¡Gracias por suscribirte al boletín de Saukos Chiken!')">
           Suscribirme
         </button>
       </div>

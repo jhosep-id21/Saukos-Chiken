@@ -26,31 +26,70 @@ function initNavbar() {
     }
   });
 
+  // Overlay oscuro del menú móvil (se crea si no existe en el HTML)
+  let overlay = document.querySelector('.nav-mobile-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.className = 'nav-mobile-overlay';
+    document.body.appendChild(overlay);
+  }
+
+  const MOBILE_BP = 1024;
+  const isMobile = () => window.innerWidth <= MOBILE_BP;
+
+  const setIcon = (open) => {
+    const icon = hamburger?.querySelector('i');
+    if (!icon) return;
+    if (open) {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-xmark');
+    } else {
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-bars');
+    }
+  };
+
+  const openMenu = () => {
+    navbar?.classList.add('menu-open');
+    navMenu?.classList.add('active');
+    overlay?.classList.add('active');
+    setIcon(true);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeMenu = () => {
+    navbar?.classList.remove('menu-open');
+    navMenu?.classList.remove('active');
+    overlay?.classList.remove('active');
+    setIcon(false);
+    document.body.style.overflow = '';
+  };
+
+  const toggleMenu = () => {
+    const active = navMenu?.classList.contains('active');
+    active ? closeMenu() : openMenu();
+  };
+
   if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      const icon = hamburger.querySelector('i');
-      if (navMenu.classList.contains('active')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-xmark');
-      } else {
-        icon.classList.remove('fa-xmark');
-        icon.classList.add('fa-bars');
-      }
-    });
+    hamburger.addEventListener('click', toggleMenu);
+
+    // Cerrar al hacer click fuera del menú (overlay)
+    overlay.addEventListener('click', closeMenu);
 
     // Cerrar al dar click en un enlace
     navMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        const icon = hamburger.querySelector('i');
-        if (icon) {
-          icon.classList.remove('fa-xmark');
-          icon.classList.add('fa-bars');
-        }
-      });
+      link.addEventListener('click', closeMenu);
     });
   }
+
+  // Al pasar de móvil a desktop (o viceversa), no dejar el menú abierto "atrapado"
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (!isMobile()) closeMenu();
+    }, 150);
+  });
 }
 
 // 2. RENDERIZADO DE LA CARTA & FILTROS
@@ -144,23 +183,29 @@ function initCartCheckoutModal() {
   const orderTypeSelect = document.getElementById('modalOrderType');
   const addressGroup = document.getElementById('modalAddressGroup');
 
+  const openModal = () => {
+    window.toggleCart(false);
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  };
+
   if (checkoutBtn && modal) {
-    checkoutBtn.addEventListener('click', () => {
-      window.toggleCart(false);
-      modal.style.display = 'flex';
-    });
+    checkoutBtn.addEventListener('click', openModal);
   }
 
   if (closeBtn && modal) {
-    closeBtn.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
+    closeBtn.addEventListener('click', closeModal);
   }
 
   // Cerrar al click afuera
   window.addEventListener('click', (e) => {
     if (e.target === modal) {
-      modal.style.display = 'none';
+      closeModal();
     }
   });
 

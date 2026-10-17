@@ -82,8 +82,8 @@
         </div>
       </a>
       <div class="navbar-actions">
-        <a href="index.html#contacto" class="btn btn-outline btn-sm">Contacto</a>
-        <a href="https://wa.me/51987654321" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+        <a href="index.html#contacto" class="btn btn-outline btn-sm nav-hide-mobile">Contacto</a>
+        <a href="https://wa.me/51941188724" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
           <i class="fa-brands fa-whatsapp"></i> Atención Directa
         </a>
       </div>
@@ -116,7 +116,7 @@
 
     <!-- Explicación Didáctica Indecopi -->
     <div class="info-legal-box">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+      <div class="info-legal-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 1.5rem;">
         <div>
           <span class="badge-diff badge-reclamo">Reclamo</span>
           <p style="font-size: 0.84rem; margin: 0;">Disconformidad relacionada a los productos expedidos o servicios brindados (ej. porción, temperatura, pedido incorrecto).</p>
@@ -207,7 +207,7 @@
 
         <div class="form-group">
           <label class="form-label">Tipo de Reclamación <span class="req">*</span></label>
-          <div style="display: flex; gap: 2rem; margin-top: 0.5rem;">
+          <div style="display: flex; gap: 1.25rem; margin-top: 0.5rem; flex-wrap: wrap;">
             <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
               <input type="radio" name="tipoReclamo" value="Reclamo" checked>
               <strong>Reclamo</strong> (Disconformidad con el producto o servicio)
