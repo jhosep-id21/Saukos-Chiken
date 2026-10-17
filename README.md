@@ -104,7 +104,7 @@ npx serve
 ## 🏢 Información de la Empresa
 
 * **Razón Social:** SAUKOS CHIKEN S.A.C.
-* **RUC:** 20608945123
-* **Teléfono / WhatsApp:** [+51 941 188 724](https://wa.me/51941188724)
-* **Dirección:** Av. Los Libertadores 1420, Lima, Perú
+* **RUC:** --------------
+* **Teléfono / WhatsApp:** [+51 999 999 999](https://wa.me/51999999999)
+* **Dirección:** Av. Los Libertadores 1420, Cajamarca-Perú
 * **Horario de Atención:** Lunes a Domingo de 11:30 AM a 11:00 PM
