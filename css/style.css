@@ -42,6 +42,10 @@
   --shadow-glow-gold: 0 0 25px rgba(245, 158, 11, 0.35);
   
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Altura del navbar: fuente única de verdad para la barra y el menú móvil */
+  --navbar-h: 92px;
+  --brand-icon-size: 56px;
 }
 
 /* RESET & BASE */
@@ -295,40 +299,72 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 76px;
+  height: var(--navbar-h);
+  /* Contenedor más ancho para que logo + 10 enlaces + acciones quepan sin apretarse */
+  max-width: 1900px;
 }
 
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .brand-icon {
-  width: 44px;
-  height: 44px;
+  width: var(--brand-icon-size);
+  height: var(--brand-icon-size);
   border-radius: var(--radius-md);
   background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-orange) 50%, var(--primary-gold) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
-  font-size: 1.35rem;
+  font-size: 1.7rem;
   box-shadow: 0 0 15px rgba(216, 30, 5, 0.5);
+  flex-shrink: 0;
+}
+
+/* Variante con el icono-logo oficial de la marca (assets/images/logo-icono.png) */
+.brand-icon--logo {
+  background: none;
+  box-shadow: none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.brand-icon--logo img {
+  width: var(--brand-icon-size);
+  height: var(--brand-icon-size);
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Lockup horizontal completo del logo (solo se usa en el footer) */
+.brand-lockup-img {
+  height: 62px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
 }
 
 .brand-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  min-width: 0;
 }
 
 .brand-name {
   font-family: var(--font-heading);
   font-weight: 900;
-  font-size: 1.45rem;
-  letter-spacing: 1px;
+  font-size: 1.75rem;
+  letter-spacing: 0.5px;
   color: var(--text-white);
-  line-height: 1;
+  line-height: 1.05;
+  white-space: nowrap;   /* "SAUKOS CHIKEN" nunca se parte en dos líneas */
 }
 
 .brand-name span {
@@ -336,17 +372,21 @@ button {
 }
 
 .brand-tagline {
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  letter-spacing: 1.6px;
   color: var(--primary-orange-light);
   font-weight: 600;
+  line-height: 1.2;
+  margin-top: 3px;
+  white-space: nowrap;   /* el eslogan tampoco se parte */
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
   gap: 1.4rem;
+  min-width: 0;
 }
 
 .nav-link {
@@ -430,6 +470,7 @@ button {
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-shrink: 0;
 }
 
 .cart-toggle-btn {
@@ -1897,6 +1938,50 @@ button {
 }
 
 /* RESPONSIVE DESIGN */
+/* NAVBAR RESPONSIVE
+   El navbar tiene 10 enlaces, así que por debajo de ~1500px hay que ir
+   comprimiendo la marca y los enlaces para que nada se desborde. */
+@media (max-width: 1500px) {
+  :root {
+    --navbar-h: 84px;
+    --brand-icon-size: 48px;
+  }
+  .nav-menu {
+    gap: 1rem;
+  }
+  .nav-link {
+    font-size: 0.85rem;
+  }
+  .brand-name {
+    font-size: 1.4rem;
+  }
+  .brand-tagline {
+    font-size: 0.55rem;
+    letter-spacing: 1.2px;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --navbar-h: 78px;
+    --brand-icon-size: 44px;
+  }
+  .nav-menu {
+    gap: 0.75rem;
+  }
+  .nav-link {
+    font-size: 0.8rem;
+  }
+  /* El eslogan es decorativo: se oculta antes de que el menú se corte */
+  .brand-tagline {
+    display: none;
+  }
+  .cart-toggle-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1929,11 +2014,11 @@ button {
   }
   .nav-menu {
     position: fixed;
-    top: 76px;
+    top: var(--navbar-h);
     left: -100%;
     width: 80%;
     max-width: 320px;
-    height: calc(100vh - 76px);
+    height: calc(100vh - var(--navbar-h));
     background: var(--dark-surface);
     flex-direction: column;
     align-items: flex-start;

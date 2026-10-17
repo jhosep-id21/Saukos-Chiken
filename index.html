@@ -18,6 +18,11 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=1200&q=80">
   <meta property="og:locale" content="es_PE">
 
+  <!-- Favicon / Icono-Logo de la marca -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon-192.png">
+
   <!-- Google Fonts & FontAwesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +39,7 @@
     "@type": "Restaurant",
     "name": "Saukos Chiken",
     "image": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=1200&q=80",
+    "logo": "assets/images/logo-saukos.png",
     "priceRange": "$$",
     "servesCuisine": "Peruvian, Pollo a la Brasa, Parrillas",
     "address": {
@@ -43,7 +49,7 @@
       "addressRegion": "Lima",
       "addressCountry": "PE"
     },
-    "telephone": "+51987654321",
+    "telephone": "+51941188724",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -68,14 +74,14 @@
       <div class="top-bar-info">
         <span><i class="fa-solid fa-fire text-red"></i> ¡Horneando con leña seleccionada y carbón vegetal!</span>
         <span><i class="fa-solid fa-clock text-gold"></i> Lun - Dom: 11:30 AM a 11:00 PM</span>
-        <span><i class="fa-solid fa-phone text-orange"></i> Central de Pedidos: <strong>+51 987 654 321</strong></span>
+        <span><i class="fa-solid fa-phone text-orange"></i> Central de Pedidos: <strong>+51 941 188 724</strong></span>
       </div>
       <div class="top-bar-socials">
         <span>Síguenos:</span>
         <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook Saukos"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram Saukos"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok Saukos"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="https://wa.me/51987654321" target="_blank" rel="noopener" aria-label="WhatsApp Saukos"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://wa.me/51941188724" target="_blank" rel="noopener" aria-label="WhatsApp Saukos"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </div>
   </div>
@@ -85,12 +91,12 @@
     <div class="container navbar-inner">
       <!-- Marca / Logo -->
       <a href="index.html" class="brand-logo" aria-label="Inicio Saukos Chiken">
-        <div class="brand-icon">
-          <i class="fa-solid fa-fire-flame-curved"></i>
+        <div class="brand-icon brand-icon--logo">
+          <img src="assets/images/logo-icono.png" alt="Saukos Chiken" width="56" height="56">
         </div>
         <div class="brand-text">
           <div class="brand-name">SAUKOS <span>CHIKEN</span></div>
-          <span class="brand-tagline">Sabor a la Brasa & Tradición</span>
+          <span class="brand-tagline">Sabor a la Brasa &amp; Tradición</span>
         </div>
       </a>
 
@@ -141,7 +147,7 @@
         </button>
 
         <!-- CTA Pedido Rápido WhatsApp -->
-        <a href="https://wa.me/51987654321?text=Hola%20Saukos%20Chiken%2C%20deseo%20hacer%20un%20pedido%20online" 
+        <a href="https://wa.me/51941188724?text=Hola%20Saukos%20Chiken%2C%20deseo%20hacer%20un%20pedido%20online" 
            target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
           <i class="fa-brands fa-whatsapp"></i> Pedir Ahora
         </a>
@@ -172,7 +178,7 @@
           <a href="#carta" class="btn btn-gold">
             <i class="fa-solid fa-drumstick-bite"></i> Ver Nuestra Carta
           </a>
-          <a href="https://wa.me/51987654321?text=Hola%20Saukos%2C%20quiero%20conocer%20las%20promociones%20de%20hoy" 
+          <a href="https://wa.me/51941188724?text=Hola%20Saukos%2C%20quiero%20conocer%20las%20promociones%20de%20hoy" 
              target="_blank" rel="noopener" class="btn btn-outline">
             <i class="fa-brands fa-whatsapp text-whatsapp"></i> Pedir por WhatsApp
           </a>
@@ -806,7 +812,7 @@
               </div>
               <div class="contact-item-text">
                 <h4>Teléfonos & Delivery</h4>
-                <p><a href="tel:+51987654321" class="text-gold">+51 987 654 321</a> / (01) 456-7890</p>
+                <p><a href="tel:+51941188724" class="text-gold">+51 941 188 724</a></p>
               </div>
             </div>
 
@@ -870,15 +876,10 @@
     <div class="container footer-grid">
       <!-- Columna 1: Marca y Bio -->
       <div class="footer-col footer-brand">
-        <div class="brand-logo">
-          <div class="brand-icon">
-            <i class="fa-solid fa-fire-flame-curved"></i>
-          </div>
-          <div class="brand-text">
-            <div class="brand-name">SAUKOS <span>CHIKEN</span></div>
-            <span class="brand-tagline">Sabor a la Brasa Tradicional</span>
-          </div>
-        </div>
+        <a href="index.html" class="brand-logo" aria-label="Ir al inicio">
+          <img class="brand-lockup-img" src="assets/images/logo-saukos.png"
+               alt="Saukos Chiken — Pollos y Parrillas a la Leña y Carbón" width="154" height="58">
+        </a>
         <p>
           Orgullosos de servir el auténtico pollo a la brasa al fuego de carbón y leña, con insumos peruanos de primera calidad y vocación de servicio para toda la familia.
         </p>
@@ -886,7 +887,7 @@
           <a href="https://facebook.com" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://tiktok.com" class="footer-social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="https://wa.me/51987654321" class="footer-social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://wa.me/51941188724" class="footer-social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
 
@@ -951,7 +952,7 @@
 
   <!-- 14. BOTONES FLOTANTES & BARRA MÓVIL STICKY -->
   <!-- Botón Flotante de WhatsApp -->
-  <a href="https://wa.me/51987654321?text=Hola%20Saukos%20Chiken%2C%20deseo%20hacer%20un%20pedido%20o%20consulta" 
+  <a href="https://wa.me/51941188724?text=Hola%20Saukos%20Chiken%2C%20deseo%20hacer%20un%20pedido%20o%20consulta" 
      class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
@@ -967,7 +968,7 @@
         <i class="fa-solid fa-basket-shopping"></i>
         <span>Mi Pedido (<span class="cart-badge-mobile">0</span>)</span>
       </button>
-      <a href="https://wa.me/51987654321?text=Hola%20Saukos%20Chiken%2C%20deseo%20hacer%20un%20pedido%20inmediato" 
+      <a href="https://wa.me/51941188724?text=Hola%20Saukos%20Chiken%2C%20deseo%20hacer%20un%20pedido%20inmediato" 
          target="_blank" rel="noopener" class="mobile-bar-btn wsp">
         <i class="fa-brands fa-whatsapp"></i>
         <span>WhatsApp</span>
